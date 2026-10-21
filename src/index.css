@@ -50,16 +50,6 @@
     background: #60a5fa;
   }
 
-  html {
-    scrollbar-width: none;
-  }
-
-  html::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-
   /* Hide scrollbar utility */
   .scrollbar-none::-webkit-scrollbar {
     display: none;
