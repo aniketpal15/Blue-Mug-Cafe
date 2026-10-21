@@ -67,6 +67,13 @@ export default function HeroParallax() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  useEffect(() => {
+    heroSlides.slice(1).forEach((slide) => {
+      const image = new Image();
+      image.src = slide.image;
+    });
+  }, []);
+
   const handleShare = async () => {
     setShareError(false);
     const shareData = {
@@ -232,6 +239,9 @@ export default function HeroParallax() {
                 <img
                   src={currentSlide.image}
                   alt={currentSlide.title}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                   draggable="false"
                   onError={(e) => {
                     // Fallback to jpg if png not supported

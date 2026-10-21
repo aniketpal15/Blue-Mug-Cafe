@@ -21,9 +21,8 @@ export default function App() {
         {loading && <Loader onComplete={() => setLoading(false)} />}
       </AnimatePresence>
 
-      {/* Main Website Structure */}
-      {!loading && (
-        <>
+      {/* Main Website Structure mounts immediately so critical images fetch while the intro plays. */}
+      <>
           {/* Top Sticky Navbar */}
           <Navbar onOpenSearch={() => setSearchOpen(true)} />
 
@@ -59,8 +58,7 @@ export default function App() {
               }
             }}
           />
-        </>
-      )}
+      </>
     </div>
   );
 }

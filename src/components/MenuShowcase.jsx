@@ -216,6 +216,7 @@ export default function MenuShowcase() {
                     src={item.image}
                     alt={item.name}
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover rounded-lg filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.7)] group-hover:scale-105 transition-transform duration-300"
                   />
 
