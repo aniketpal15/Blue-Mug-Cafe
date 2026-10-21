@@ -6,7 +6,7 @@ export default function Loader({ onComplete }) {
 
   useEffect(() => {
     const startTime = performance.now();
-    const duration = 500;
+    const duration = 900;
     let completionTimer;
 
     const update = (now) => {
@@ -22,7 +22,7 @@ export default function Loader({ onComplete }) {
       } else {
         completionTimer = setTimeout(() => {
           if (onComplete) onComplete();
-        }, 150);
+        }, 200);
       }
     };
 
