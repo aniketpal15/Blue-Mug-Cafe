@@ -1,7 +1,5 @@
 # ☕ Blue Mug Cafe — Official Website
 
-[🌐 **View the live website on Vercel**](https://blue-mug-cafe.vercel.app/)
-
 > ### *Where Artisanal Brews Meet Gourmet Bites & Thoughts*
 > **Jodhpur Park, Kolkata — Est. 2018**
 
@@ -21,6 +19,8 @@ The **Blue Mug Cafe** website is a premium, cinematic, fully responsive single-p
 This website captures that personality — blending a **dark premium aesthetic**, **fluid physics-based animations**, and a **world-class UI** that feels as cozy and exciting as walking into the cafe itself.
 
 > *"The goal was simple: build a digital experience as good as the espresso."*
+
+The website is deployed on **Vercel**: [🌐 Visit the live Blue Mug Cafe website](https://blue-mug-cafe.vercel.app/).
 
 ---
 
