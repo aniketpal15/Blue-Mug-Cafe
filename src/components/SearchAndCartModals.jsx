@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Search, ShoppingBag, Trash2, ArrowRight, ExternalLink, Sparkles, Plus, Minus } from 'lucide-react';
 import { menuItems } from '../data/menuItems';
 
 export function SearchModal({ isOpen, onClose, onSelectItem }) {
   const [query, setQuery] = useState('');
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   const searchResults = query.trim() === '' ? [] : menuItems.filter(item => 
     item.name.toLowerCase().includes(query.toLowerCase()) ||

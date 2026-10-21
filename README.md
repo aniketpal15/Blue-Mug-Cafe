@@ -78,7 +78,7 @@ A 12-photo real-image gallery with authentic cafe interior shots:
 ### ⭐ Customer Reviews
 Genuine Google-sourced reviews in premium styled cards:
 - Star ratings, reviewer name, date, review text
-- Google rating summary badge — **4.8★ average**
+- Google rating summary badge — **4.3★ average**
 - Smooth horizontal scroll on mobile
 
 ---
@@ -138,14 +138,14 @@ Blue Mug Cafe/
 │
 ├── public/
 │   ├── images/
-│   │   ├── hero-coffee.png/.jpg    ← Hero food images (PNG + JPG fallback)
-│   │   ├── hero-burger.png/.jpg
-│   │   ├── hero-mocktail.png/.jpg
-│   │   ├── hero-pizza.png/.jpg
-│   │   ├── hero-sizzler.png/.jpg
+│   │   ├── hero-coffee.webp/.jpg  ← Optimized WebP hero image with JPG fallback
+│   │   ├── hero-burger.webp/.jpg
+│   │   ├── hero-mocktail.webp/.jpg
+│   │   ├── hero-pizza.webp/.jpg
+│   │   ├── hero-sizzler.webp/.jpg
 │   │   └── menu/                   ← 177 individual menu item photos
 │   ├── gallery/                    ← 12 curated real cafe ambience photos
-│   └── blue-mug-menu.pdf           ← Official 60MB full menu PDF
+│   └── blue-mug-menu.pdf           ← Official ~58MB full menu PDF
 │
 ├── index.html                      ← Vite app entry HTML
 ├── vite.config.js                  ← Build configuration
