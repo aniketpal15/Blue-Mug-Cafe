@@ -20,7 +20,7 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
         x: [initial.x, initial.x * 0.7, initial.x * 0.35, 0],
         y: [initial.y, initial.y * 0.7, initial.y * 0.35, 0]
       }}
-      viewport={{ once: false, amount: 0.2, margin: '0px' }}
+      viewport={{ once: false, amount: 0.01, margin: '0px' }}
       transition={prefersReducedMotion
         ? { duration: 0.01 }
         : {
