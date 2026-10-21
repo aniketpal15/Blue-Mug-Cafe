@@ -46,7 +46,7 @@ export default function App() {
             </ScrollReveal>
 
             {/* Customer Reviews: Genuine Google reviews */}
-            <ScrollReveal>
+            <ScrollReveal direction="down">
               <CustomerReviews />
             </ScrollReveal>
           </main>
