@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import HeroParallax from './components/HeroParallax';
@@ -13,6 +13,18 @@ import { SearchModal } from './components/SearchAndCartModals';
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [searchOpen, setSearchOpen] = useState(false);
+  const prefersReducedMotion = useReducedMotion();
+
+  const revealTransition = prefersReducedMotion
+    ? { duration: 0.01 }
+    : { duration: 0.75, ease: [0.16, 1, 0.3, 1] };
+
+  const revealProps = {
+    initial: prefersReducedMotion ? false : { opacity: 0, y: 24 },
+    whileInView: prefersReducedMotion ? undefined : { opacity: 1, y: 0 },
+    viewport: { once: true, amount: 0.12, margin: '0px 0px -8% 0px' },
+    transition: revealTransition
+  };
 
   return (
     <div className="min-h-screen bg-[#070809] text-white selection:bg-blue-600 selection:text-white">
@@ -31,16 +43,24 @@ export default function App() {
             <HeroParallax />
 
             {/* Core Section 3: Menu Highlights Showcase */}
-            <MenuShowcase />
+            <motion.div {...revealProps}>
+              <MenuShowcase />
+            </motion.div>
 
             {/* Core Section 4: Order Online Delivery Integration */}
-            <DeliverySection />
+            <motion.div {...revealProps}>
+              <DeliverySection />
+            </motion.div>
 
             {/* Core Experience: Real Cafe Ambience & Story */}
-            <CafeAmbience />
+            <motion.div {...revealProps}>
+              <CafeAmbience />
+            </motion.div>
 
             {/* Customer Reviews: Genuine Google reviews */}
-            <CustomerReviews />
+            <motion.div {...revealProps}>
+              <CustomerReviews />
+            </motion.div>
           </main>
 
           {/* Core Section 5: Footer & Contact */}
