@@ -183,7 +183,9 @@ export default function HeroParallax() {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 overflow-hidden">
           <motion.div
             style={{ x: textTranslateX, y: textTranslateY }}
-            className="w-full flex items-center justify-center -translate-y-3 sm:translate-y-0"
+            className={`w-full flex items-center justify-center sm:translate-y-0 ${
+              currentSlide.category === 'MOCKTAIL' ? '-translate-y-3' : '-translate-y-10'
+            }`}
           >
             <AnimatePresence mode="wait">
               <motion.h1
@@ -192,7 +194,11 @@ export default function HeroParallax() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 1.08, y: direction * -40 }}
                 transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                className="font-display text-[clamp(5.4rem,23vw,7.8rem)] sm:text-[9.5rem] md:text-[12rem] lg:text-[15rem] xl:text-[17.5rem] leading-none font-black text-white/95 uppercase tracking-normal sm:tracking-wider text-center select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
+                className={`font-display ${
+                  currentSlide.category === 'MOCKTAIL'
+                    ? 'text-[clamp(5.4rem,23vw,7.8rem)] tracking-normal'
+                    : 'text-[clamp(6rem,25vw,9rem)] tracking-[0.03em]'
+                } sm:text-[9.5rem] md:text-[12rem] lg:text-[15rem] xl:text-[17.5rem] leading-none font-black text-white/95 uppercase sm:tracking-wider text-center select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]`}
               >
                 {currentSlide.category}
               </motion.h1>
