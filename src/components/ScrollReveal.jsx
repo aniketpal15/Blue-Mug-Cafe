@@ -14,9 +14,8 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
 
   return (
     <motion.div
-      initial={prefersReducedMotion ? false : { opacity: 0, filter: 'blur(14px)', ...initial }}
+      initial={prefersReducedMotion ? false : { opacity: 1, filter: 'blur(14px)', ...initial }}
       whileInView={prefersReducedMotion ? undefined : {
-        opacity: [0, 0.25, 0.5, 1],
         filter: ['blur(14px)', 'blur(10px)', 'blur(5px)', 'blur(0px)'],
         x: [initial.x, initial.x * 0.7, initial.x * 0.35, 0],
         y: [initial.y, initial.y * 0.7, initial.y * 0.35, 0]
