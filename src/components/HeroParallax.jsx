@@ -177,7 +177,7 @@ export default function HeroParallax() {
       </div>
 
       {/* CENTER STAGE: Giant Layered Typography Behind Food Item (Fills available space) */}
-      <div className="relative w-full max-w-7xl mx-auto flex-1 flex items-center justify-center min-h-0 py-2 sm:py-4">
+      <div className="relative w-full max-w-[1440px] mx-auto flex-1 flex items-center justify-center min-h-0 py-2 sm:py-4">
         
         {/* 1. GIANT OVERLAPPING BACKGROUND TEXT ( Anton/Oswald Font ) */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 overflow-hidden">
@@ -281,7 +281,7 @@ export default function HeroParallax() {
       </div>
 
       {/* 3. BOTTOM ROW: Order Now / Explore Menu CTA, Dots & Food Details Callout (Fully Visible in Viewport) */}
-      <div className="relative w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between z-20 gap-3 sm:gap-4 pt-1 pb-1">
+      <div className="relative w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center md:items-end justify-between z-20 gap-3 sm:gap-4 pt-1 pb-1">
         
         {/* Quick CTA Pill Buttons */}
         <div className="flex items-center gap-2.5 sm:gap-3">

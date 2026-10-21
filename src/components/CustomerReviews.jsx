@@ -173,7 +173,7 @@ export default function CustomerReviews() {
     <section id="reviews" className="relative bg-[#070809] py-14 sm:py-20 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-amber-400/5 blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -232,7 +232,7 @@ export default function CustomerReviews() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex justify-center">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex justify-center">
         <motion.a
           href="https://www.google.com/search?q=blue+mug+cafe+kolkata+reviews"
           target="_blank"
