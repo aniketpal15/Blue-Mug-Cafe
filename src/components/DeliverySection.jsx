@@ -82,7 +82,7 @@ export default function DeliverySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -6 }}
-              transition={{ duration: 0.65, delay: deliveryPlatforms.indexOf(platform) * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ type: 'spring', stiffness: 75, damping: 18, mass: 0.65, delay: deliveryPlatforms.indexOf(platform) * 0.08 }}
               className={`relative rounded-3xl bg-gradient-to-b ${platform.accentBg} border ${platform.badgeBorder} p-5 sm:p-7 flex flex-col justify-between transition-all duration-300 ${platform.shadow}`}
             >
               <div>

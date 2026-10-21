@@ -107,7 +107,7 @@ export default function CafeAmbience() {
               whileHover={{ scale: 1.02 }}
               onClick={() => setSelectedPhoto(item)}
               className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group bg-neutral-900 border border-white/5"
-              transition={{ duration: 0.55, delay: (item.id % 4) * 0.06, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ type: 'spring', stiffness: 80, damping: 18, mass: 0.6, delay: (item.id % 4) * 0.05 }}
             >
               <img
                 src={item.src}
