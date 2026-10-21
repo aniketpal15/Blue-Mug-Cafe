@@ -36,17 +36,17 @@ export default function App() {
             </ScrollReveal>
 
             {/* Core Section 4: Order Online Delivery Integration */}
-            <ScrollReveal direction="left">
+            <ScrollReveal>
               <DeliverySection />
             </ScrollReveal>
 
             {/* Core Experience: Real Cafe Ambience & Story */}
-            <ScrollReveal direction="right">
+            <ScrollReveal>
               <CafeAmbience />
             </ScrollReveal>
 
             {/* Customer Reviews: Genuine Google reviews */}
-            <ScrollReveal direction="down">
+            <ScrollReveal>
               <CustomerReviews />
             </ScrollReveal>
           </main>

@@ -14,12 +14,12 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
 
   return (
     <motion.div
-      initial={prefersReducedMotion ? false : { opacity: 0, ...initial }}
-      whileInView={prefersReducedMotion ? undefined : { opacity: 1, x: 0, y: 0 }}
+      initial={prefersReducedMotion ? false : { opacity: 0, filter: 'blur(8px)', ...initial }}
+      whileInView={prefersReducedMotion ? undefined : { opacity: 1, filter: 'blur(0px)', x: 0, y: 0 }}
       viewport={{ once: true, amount: 0.2, margin: '0px 0px -8% 0px' }}
       transition={prefersReducedMotion
         ? { duration: 0.01 }
-        : { duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
+        : { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
