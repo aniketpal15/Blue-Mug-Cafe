@@ -1,5 +1,7 @@
 # ☕ Blue Mug Cafe — Official Website
 
+[🌐 **View the live website on Vercel**](https://blue-mug-cafe.vercel.app/)
+
 > ### *Where Artisanal Brews Meet Gourmet Bites & Thoughts*
 > **Jodhpur Park, Kolkata — Est. 2018**
 
@@ -214,6 +216,8 @@ Starts at [http://localhost:3001](http://localhost:3001) — serves the React SP
 ## 🌐 Hosting & Deployment
 
 ### Vercel — Recommended (Free)
+**Live deployment:** [blue-mug-cafe.vercel.app](https://blue-mug-cafe.vercel.app/)
+
 1. Push to a GitHub repository
 2. Import at [vercel.com/new](https://vercel.com/new)
 3. **Build Command**: `npm run build`
