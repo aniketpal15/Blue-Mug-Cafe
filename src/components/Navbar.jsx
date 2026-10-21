@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Phone, Menu, X, Flame, Download, Coffee, ExternalLink } from 'lucide-react';
+import { Search, Phone, Menu, X, Flame, Download } from 'lucide-react';
 
 export default function Navbar({ onOpenSearch }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,17 +56,11 @@ export default function Navbar({ onOpenSearch }) {
                 className="flex items-center gap-2 sm:gap-2.5 group"
                 onClick={(e) => handleNavClick(e, '#hero')}
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-blue-500 flex items-center justify-center shadow-[0_0_15px_rgba(37,99,235,0.5)] border border-blue-400/30 group-hover:scale-105 transition-transform shrink-0">
-                  <Coffee className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-display text-lg sm:text-xl tracking-tight text-white leading-none">
-                    BLUE MUG
-                  </span>
-                  <span className="text-[9px] sm:text-[10px] tracking-[0.25em] text-blue-400 font-semibold uppercase">
-                    KOLKATA
-                  </span>
-                </div>
+                <img
+                  src="/images/blue-mug-logo.jpg"
+                  alt="Blue Mug Cafe"
+                  className="h-10 w-24 sm:h-12 sm:w-28 rounded-lg object-cover object-center shadow-[0_0_15px_rgba(37,99,235,0.35)] border border-blue-400/30 group-hover:scale-105 transition-transform shrink-0"
+                />
               </a>
 
               {/* Promotions Badge */}
