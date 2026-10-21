@@ -8,7 +8,7 @@
   }
   
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scroll-padding-top: 5rem;
     background-color: #08090a;
     width: 100%;
