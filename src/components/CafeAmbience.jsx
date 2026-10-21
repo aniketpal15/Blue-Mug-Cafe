@@ -29,18 +29,18 @@ export default function CafeAmbience() {
   ];
 
   const galleryItems = [
-    { id: 1, src: '/gallery/blue_mug_cafe_0007.jpg', title: 'Cozy Reading Nook & Library', tag: 'AMBIENCE' },
-    { id: 2, src: '/gallery/blue_mug_cafe_0016.jpg', title: 'Espresso Bar & Brewing Craft', tag: 'BARISTA' },
-    { id: 3, src: '/gallery/blue_mug_cafe_0029.jpg', title: 'Warm Evening Yellow Glow', tag: 'LIGHTS' },
-    { id: 4, src: '/gallery/blue_mug_cafe_0081.jpg', title: 'Artisan Coffee & Book Corner', tag: 'CULTURE' },
-    { id: 5, src: '/gallery/blue_mug_cafe_0126.jpg', title: 'Signature Cafe Table Spread', tag: 'EXPERIENCE' },
-    { id: 6, src: '/gallery/blue_mug_cafe_0190.jpg', title: 'Creative Corner & Art Wall', tag: 'AESTHETIC' },
-    { id: 7, src: '/gallery/blue_mug_cafe_0196.jpg', title: 'Intimate Seating & Conversations', tag: 'DINE-IN' },
-    { id: 8, src: '/gallery/blue_mug_cafe_0200.jpg', title: 'Warm Wooden Interiors', tag: 'VIBES' },
-    { id: 9, src: '/gallery/blue_mug_cafe_0254.jpg', title: 'Fresh Brew & Gourmet Bites', tag: 'CULINARY' },
-    { id: 10, src: '/gallery/blue_mug_cafe_0320.jpg', title: 'Outdoor Patio & Street Breeze', tag: 'SEATING' },
-    { id: 11, src: '/gallery/blue_mug_cafe_0380.jpg', title: 'Late Evening Coffee Sessions', tag: 'COMMUNITY' },
-    { id: 12, src: '/gallery/blue_mug_cafe_0576.jpg', title: 'Sweet Treats & Special Moments', tag: 'DESSERT' },
+    { id: 1, src: '/gallery/blue_mug_cafe_0007.webp', title: 'Cozy Reading Nook & Library', tag: 'AMBIENCE' },
+    { id: 2, src: '/gallery/blue_mug_cafe_0016.webp', title: 'Espresso Bar & Brewing Craft', tag: 'BARISTA' },
+    { id: 3, src: '/gallery/blue_mug_cafe_0029.webp', title: 'Warm Evening Yellow Glow', tag: 'LIGHTS' },
+    { id: 4, src: '/gallery/blue_mug_cafe_0081.webp', title: 'Artisan Coffee & Book Corner', tag: 'CULTURE' },
+    { id: 5, src: '/gallery/blue_mug_cafe_0126.webp', title: 'Signature Cafe Table Spread', tag: 'EXPERIENCE' },
+    { id: 6, src: '/gallery/blue_mug_cafe_0190.webp', title: 'Creative Corner & Art Wall', tag: 'AESTHETIC' },
+    { id: 7, src: '/gallery/blue_mug_cafe_0196.webp', title: 'Intimate Seating & Conversations', tag: 'DINE-IN' },
+    { id: 8, src: '/gallery/blue_mug_cafe_0200.webp', title: 'Warm Wooden Interiors', tag: 'VIBES' },
+    { id: 9, src: '/gallery/blue_mug_cafe_0254.webp', title: 'Fresh Brew & Gourmet Bites', tag: 'CULINARY' },
+    { id: 10, src: '/gallery/blue_mug_cafe_0320.webp', title: 'Outdoor Patio & Street Breeze', tag: 'SEATING' },
+    { id: 11, src: '/gallery/blue_mug_cafe_0380.webp', title: 'Late Evening Coffee Sessions', tag: 'COMMUNITY' },
+    { id: 12, src: '/gallery/blue_mug_cafe_0576.webp', title: 'Sweet Treats & Special Moments', tag: 'DESSERT' },
   ];
 
   return (
