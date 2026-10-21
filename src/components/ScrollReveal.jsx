@@ -12,7 +12,7 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
   const prefersReducedMotion = useReducedMotion();
   const revealRef = React.useRef(null);
   const controls = useAnimation();
-  const isInView = useInView(revealRef, { amount: 0.2, margin: '0px 0px -8% 0px' });
+  const isInView = useInView(revealRef, { once: true, amount: 0.2, margin: '0px 0px -8% 0px' });
   const initial = directions[direction] || directions.up;
   const hiddenState = React.useMemo(
     () => ({ opacity: 0, ...initial, filter: 'blur(10px)' }),
@@ -25,17 +25,15 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
       return;
     }
 
-    if (isInView) {
-      controls.start({
-        opacity: 1,
-        x: 0,
-        y: 0,
-        filter: 'blur(0px)',
-        transition: { duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] }
-      });
-    } else {
-      controls.start(hiddenState);
-    }
+    if (!isInView) return;
+
+    controls.start({
+      opacity: 1,
+      x: 0,
+      y: 0,
+      filter: 'blur(0px)',
+      transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }
+    });
   }, [controls, delay, hiddenState, isInView, prefersReducedMotion]);
 
   return (
@@ -43,6 +41,7 @@ export default function ScrollReveal({ children, direction = 'up', delay = 0, cl
       ref={revealRef}
       initial={prefersReducedMotion ? false : hiddenState}
       animate={controls}
+      style={{ willChange: 'opacity, transform, filter' }}
       className={className}
     >
       {children}
