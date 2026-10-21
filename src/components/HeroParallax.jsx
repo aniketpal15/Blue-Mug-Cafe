@@ -244,8 +244,8 @@ export default function HeroParallax() {
                   decoding="async"
                   draggable="false"
                   onError={(e) => {
-                    // Fallback to jpg if png not supported
-                    if (e.target.src.endsWith('.png')) {
+                    if (!e.currentTarget.dataset.fallbackApplied) {
+                      e.currentTarget.dataset.fallbackApplied = 'true';
                       e.target.src = currentSlide.fallbackImage;
                     }
                   }}
